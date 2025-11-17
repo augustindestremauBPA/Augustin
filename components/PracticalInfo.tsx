@@ -1,4 +1,3 @@
-
 import React from 'react';
 import CTAButton from './CTAButton';
 
@@ -28,14 +27,14 @@ const PracticalInfo: React.FC = () => {
             <div className="space-y-6">
                 <InfoItem icon={<CalendarIcon />} title="Date">Jeudi 29 Janvier 2026</InfoItem>
                 <InfoItem icon={<ClockIcon />} title="Horaires">9h30 - 17h30</InfoItem>
-                <InfoItem icon={<LocationIcon />} title="Lieu">Un lieu d'exception au coeur de Paris<br /><span className="text-sm font-light opacity-80">(Adresse communiquée après inscription)</span></InfoItem>
+                <InfoItem icon={<LocationIcon />} title="Lieu">Un lieu de qualité au coeur de Paris<br /><span className="text-sm font-light opacity-80">(Adresse communiquée après inscription)</span></InfoItem>
                 <InfoItem icon={<PriceIcon />} title="Tarif">1 300 € HT par participant<br /><span className="text-sm font-light opacity-80">(Inclut échanges préalables, animation et supports)</span></InfoItem>
             </div>
           </div>
           <div className="bg-bpa-off-white text-bpa-black p-8 md:p-12 text-center rounded-sm shadow-2xl">
               <h3 className="font-serif text-2xl md:text-3xl text-bpa-red mb-4">Les places sont limitées.</h3>
               <p className="font-sans text-lg mb-8">Pour garantir une expérience d'apprentissage et de networking de qualité, nous limitons volontairement le nombre de participants à 12.</p>
-              <CTAButton>Je réserve ma place</CTAButton>
+              <CTAButton href="https://form.typeform.com/to/RlsxshV4">Je réserve ma place</CTAButton>
           </div>
         </div>
       </div>

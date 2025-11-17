@@ -2,11 +2,11 @@
 import React from 'react';
 import type { ProgramItem } from '../types';
 
-const BrainIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-bpa-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-    <path strokeLinecap="round" strokeLinejoin="round" d="M4.87 7.21a4.5 4.5 0 016.26 0L12 8.27l.87-.85a4.5 4.5 0 016.26 0l.01.01a4.5 4.5 0 010 6.26l-6.63 6.63a.75.75 0 01-1.06 0l-6.63-6.63a4.5 4.5 0 010-6.26l.01-.01z" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M12 21.75c-4.14-2.82-6.63-6.63-6.63-10.5C5.37 6.63 8.25 4 12 4s6.63 2.63 6.63 7.25c0 3.87-2.49 7.68-6.63 10.5z" clipRule="evenodd" />
-  </svg>
+const ChipIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-bpa-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 7.5h-9a.75.75 0 00-.75.75v7.5c0 .414.336.75.75.75h9a.75.75 0 00.75-.75v-7.5a.75.75 0 00-.75-.75z" />
+    </svg>
 );
 
 const CompassIcon = () => (
@@ -17,11 +17,10 @@ const CompassIcon = () => (
   </svg>
 );
 
-const BalanceIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-bpa-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-    <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v18m-6-6h12M6 9h12m-9 0V6a3 3 0 013-3h0a3 3 0 013 3v3m-6 0v3m6-3v3" />
-    <path strokeLinecap="round" strokeLinejoin="round" d="M3 21h18M3 15l2.25-4.5L7.5 15M16.5 15l2.25-4.5L21 15" />
-  </svg>
+const RoadmapIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-bpa-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+    </svg>
 );
 
 const GroupIcon = () => (
@@ -33,24 +32,24 @@ const GroupIcon = () => (
 
 const programData: ProgramItem[] = [
   {
-    title: "Le Leadership du Coeur",
-    description: "Intelligence Émotionnelle et Empathie Stratégique pour mobiliser et inspirer vos équipes.",
-    icon: <BrainIcon />,
+    title: "Pré-discernement préparatoire via IA",
+    description: "Utilisez un outil d'IA pour une auto-évaluation préparatoire en discernant votre cas d'usage en amont de la session.",
+    icon: <ChipIcon />,
   },
   {
-    title: "La Raison au Service de la Décision",
-    description: "Développez clarté, courage et vision pour prendre des décisions complexes avec confiance.",
+    title: "Panorama des enjeux IA",
+    description: "Conférence à 360° (tech, anthropologie, éthique, économie, raison d'être...) pour décrypter l'IA et son impact réel sur votre modèle d'affaires.",
     icon: <CompassIcon />,
   },
   {
-    title: "L'Équilibre Dynamique",
-    description: "Intégrez Coeur et Raison pour une performance durable, un leadership authentique et un impact mesurable.",
-    icon: <BalanceIcon />,
+    title: "Alignement collaboratif en petits groupes",
+    description: "Ateliers interactifs pour discerner entre pairs le juste usage de l'IA, la valeur transformative, les trahisons-clé à éviter et les actions prioritaires.",
+    icon: <GroupIcon />,
   },
   {
-    title: "Ateliers Pratiques & Networking",
-    description: "Mise en situation sur des cas réels, et des moments privilégiés pour échanger entre pairs.",
-    icon: <GroupIcon />,
+    title: "Pré-feuille de route personnalisée",
+    description: "Repartez avec les premières étapes claires, actionnables et personnalisées pour tester, discerner et aligner de manière agile l'usage juste de l'IA.",
+    icon: <RoadmapIcon />,
   },
 ];
 
@@ -60,8 +59,8 @@ const Program: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="font-serif text-3xl md:text-4xl text-bpa-red">Une journée pour vous transformer</h2>
-          <p className="mt-4 text-lg text-bpa-black/70 max-w-2xl mx-auto">
-            Notre programme est conçu comme un parcours intensif et interactif pour équiper les leaders des compétences de demain.
+          <p className="mt-4 text-lg text-bpa-black/70 max-w-3xl mx-auto">
+            Parcours éclair combinant une conférence inspirante à 360° et une session collaborative pour initier un discernement stratégique concret.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

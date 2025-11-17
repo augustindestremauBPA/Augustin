@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const About: React.FC = () => {
@@ -9,24 +8,28 @@ const About: React.FC = () => {
           <h2 className="font-serif text-3xl md:text-4xl text-bpa-red">À propos des organisateurs</h2>
         </div>
         <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          <div className="text-center md:text-left">
-            <img 
-              src="https://images.squarespace-cdn.com/content/v1/6321d1a0e854dc2d6d3a2a9c/25683639-38b0-45cf-9b37-e7e09314fb13/bpa-logo-rouge.png?format=1500w" 
-              alt="Blaise Pascal Advisors Logo" 
-              className="h-12 mx-auto md:mx-0 mb-4"
-            />
-            <p className="font-sans text-bpa-black/80 leading-relaxed">
-              <strong>Blaise Pascal Advisors</strong> est un cabinet de conseil en stratégie de premier plan qui aide les dirigeants à prendre des décisions critiques avec clarté et conviction. Ancré dans une tradition de rigueur intellectuelle, le cabinet allie analyse pointue et sagesse philosophique pour éclairer les chemins de la croissance.
+          <div className="flex flex-col text-center md:text-left">
+            <a href="https://www.pascal-advisors.com/" target="_blank" rel="noopener noreferrer" className="inline-block mb-4">
+              <img 
+                src="https://images.squarespace-cdn.com/content/v1/6321d1a0e854dc2d6d3a2a9c/25683639-38b0-45cf-9b37-e7e09314fb13/bpa-logo-rouge.png?format=1500w" 
+                alt="Blaise Pascal Advisors Logo" 
+                className="h-10 md:h-12 w-auto"
+              />
+            </a>
+            <p className="font-sans text-bpa-black/80 leading-relaxed flex-grow">
+              <strong>Blaise Pascal Advisors</strong> est un cabinet d'advisors-entrepreneurs qui accompagnent dirigeants et entrepreneurs pour prendre un cap stratégique de transformation ayant un sens à l'ère de l'IA pour développer des entreprises durables et profitables.
             </p>
           </div>
-          <div className="text-center md:text-left">
-            <img 
-              src="https://www.heartleadershipuniversity.org/wp-content/uploads/2022/03/cropped-logo.webp" 
-              alt="Heart Leadership University Logo" 
-              className="h-16 mx-auto md:mx-0 mb-4"
-            />
-            <p className="font-sans text-bpa-black/80 leading-relaxed">
-              <strong>Heart Leadership University</strong> est une institution dédiée à la transformation du leadership par l'intelligence du coeur. Elle forme les leaders à cultiver l'empathie, l'authenticité et le courage pour créer des cultures d'entreprise où la performance et le bien-être humain prospèrent de concert.
+          <div className="flex flex-col text-center md:text-left">
+            <a href="https://www.heartleadershipuniversity.org/" target="_blank" rel="noopener noreferrer" className="inline-block mb-4">
+              <img 
+                src="https://www.heartleadershipuniversity.org/wp-content/uploads/2022/03/cropped-logo.webp" 
+                alt="Heart Leadership University Logo" 
+                className="h-12 w-auto"
+              />
+            </a>
+            <p className="font-sans text-bpa-black/80 leading-relaxed flex-grow">
+              <strong>Heart Leadership University</strong> est une institution dédiée au leadership par l'intelligence du coeur. Elle forme les leaders à cultiver l'empathie, l'authenticité et le courage pour créer des cultures d'entreprise où la performance et le bien-être humain prospèrent de concert.
             </p>
           </div>
         </div>

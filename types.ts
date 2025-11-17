@@ -6,6 +6,7 @@ export interface Speaker {
   organization: string;
   bio: string;
   imageUrl: string;
+  linkedinUrl?: string;
 }
 
 export interface Testimonial {

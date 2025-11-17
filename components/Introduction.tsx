@@ -8,13 +8,13 @@ const Introduction: React.FC = () => {
         <h2 className="font-serif text-3xl md:text-4xl text-bpa-red mb-6">Pourquoi cette Masterclass est-elle essentielle ?</h2>
         <div className="font-sans text-lg text-bpa-black/80 leading-relaxed space-y-4">
           <p>
-            Dans un monde en constante mutation, le leadership traditionnel ne suffit plus. Les dirigeants d'aujourd'hui doivent naviguer dans la complexité, inspirer des équipes diversifiées et piloter la performance tout en cultivant un environnement de travail humain et épanouissant.
+            L’IA s’invite avec force dans la stratégie des PMETI. Entre promesses réelles (productivité, expérience client, automatisation), Fear of Missing Out des dernières nouveautés) et risques (désengagement, régression de savoir-faire, asservissement stratégique), comment <strong>garder le juste cap</strong> ?
           </p>
           <p>
-            Cette masterclass unique, fruit de la collaboration entre l'expertise stratégique de <strong>Blaise Pascal Advisors</strong> et l'approche centrée sur l'humain de <strong>Heart Leadership University</strong>, vous offre les clés pour réconcilier deux forces que l'on oppose trop souvent : le Coeur et la Raison.
+            Cette masterclass unique, fruit du partenariat entre l'expertise de <strong>Blaise Pascal Advisors</strong> et l'approche centrée sur l'humain de <strong>Heart Leadership University</strong>, vous offre les clés pour réconcilier deux forces que l'on oppose trop souvent : le Coeur et la Raison.
           </p>
           <p>
-            Apprenez à maîtriser l'équilibre dynamique entre l'intelligence émotionnelle et la rigueur analytique pour devenir un leader complet, capable de générer une performance durable et un impact positif.
+            Notre expérience d'entrepreneurs-advisors montre que le discernement du juste usage de l'IA peut souvent servir des modèles d’affaires durablement performants, porteurs d'un sens renouvelé.
           </p>
         </div>
       </div>

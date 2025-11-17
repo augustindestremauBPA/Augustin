@@ -4,24 +4,27 @@ import type { Speaker } from '../types';
 const speakersData: Speaker[] = [
   {
     name: 'Augustin Destremau',
-    title: 'Fondateur',
+    title: 'Partner',
     organization: 'Blaise Pascal Advisors',
-    bio: 'Augustin accompagne les dirigeants dans leurs transformations. Son approche unique allie rigueur analytique et inspiration philosophique pour aligner stratégie, leadership et sens.',
-    imageUrl: 'https://media.licdn.com/dms/image/D4E03AQGgq0oQ0z4Xzg/profile-displayphoto-shrink_400_400/0/1690804724490?e=1726704000&v=beta&t=4Yn1x9t_d_1bS1XmJz6wX2sFz5n_q8E7H0N3r5X1iA4',
+    bio: 'Entrepreneur social et numérique, Augustin accompagne les dirigeants et associations dans leurs transformations à la fois IA et passionément humaine, au service du bien commun.',
+    imageUrl: 'https://storage.googleapis.com/aip-dev-user-uploads/319343/36982457/augustin.jpg',
+    linkedinUrl: 'https://www.linkedin.com/in/augustin-destremau-99062680',
   },
   {
     name: 'Etienne de Rocquigny',
     title: 'Fondateur',
-    organization: 'Heart Leadership University',
-    bio: 'Spécialiste de la décision en univers complexe, Etienne aide les leaders à développer leur intelligence du coeur pour naviguer l\'incertitude avec courage et discernement.',
-    imageUrl: 'https://media.licdn.com/dms/image/C4E03AQE1B5t9yYhE0g/profile-displayphoto-shrink_400_400/0/1645041921312?e=1726704000&v=beta&t=sC0aP-1P5bF_n8F-c-z6Z_c_w4A-jR9N-gX_F8e6s_Y',
+    organization: 'Blaise Pascal Advisors',
+    bio: 'Mathématicien, serial entrepreneur, conférencier et essayiste, ex-vice doyen Centrale Paris, Etienne forme et accompagne dirigeants et entrepreneurs pour aligner la stratégie et le sens.',
+    imageUrl: 'https://images.squarespace-cdn.com/content/v1/6321d1a0e854dc2d6d3a2a9c/1663168051151-2QG3J0CDXJ8S93T5QW8S/Etienne.jpg?format=1500w',
+    linkedinUrl: 'https://www.linkedin.com/in/ederocquigny',
   },
   {
     name: 'Jerome Lasalle',
-    title: 'Managing Director',
-    organization: 'Societe Generale',
-    bio: 'Expert en stratégie et transformation, Jerome apporte une perspective unique sur le leadership au sein des grandes organisations et partage sa vision en tant que professeur à HEC Paris.',
-    imageUrl: 'https://media.licdn.com/dms/image/C5603AQF43v-Yd3nSjA/profile-displayphoto-shrink_400_400/0/1516275811776?e=1726704000&v=beta&t=2z-l-A4lV1e-c_R9uF9Z1_u7X_H-A5x_Y5vQ_r7c_w0',
+    title: 'Partner',
+    organization: 'Blaise Pascal Advisors',
+    bio: 'Expert en transformation et busdev d\'entreprises numériques, Jerome accompagne l\'exploration de nouveaux business-models et la structuration de la croissance.',
+    imageUrl: 'https://images.squarespace-cdn.com/content/v1/6321d1a0e854dc2d6d3a2a9c/1663168239328-3L5Y615X54BQA5A5F4I9/Jerome.jpg?format=1500w',
+    linkedinUrl: 'https://www.linkedin.com/in/jerome-unleash-growth-data-ai-insights-impact',
   },
 ];
 
@@ -44,8 +47,14 @@ const Speakers: React.FC = () => {
                 className="w-32 h-32 rounded-full object-cover flex-shrink-0 mb-4"
               />
               <div>
-                <h3 className="font-serif text-2xl text-bpa-black font-semibold">{speaker.name}</h3>
-                <p className="font-sans text-bpa-red font-medium mb-2">{speaker.title}{speaker.organization && `, ${speaker.organization}`}</p>
+                {speaker.linkedinUrl ? (
+                  <a href={speaker.linkedinUrl} target="_blank" rel="noopener noreferrer">
+                    <h3 className="font-serif text-2xl text-bpa-black font-semibold hover:text-bpa-gold hover:underline transition-colors duration-300">{speaker.name}</h3>
+                  </a>
+                ) : (
+                  <h3 className="font-serif text-2xl text-bpa-black font-semibold">{speaker.name}</h3>
+                )}
+                <p className="font-sans text-bpa-red font-medium mb-2">{speaker.title}{speaker.organization ? `, ${speaker.organization}` : ''}</p>
                 <p className="font-sans text-bpa-black/80 leading-relaxed">{speaker.bio}</p>
               </div>
             </div>
