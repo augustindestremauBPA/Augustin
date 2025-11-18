@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -28,6 +27,31 @@
         }
       }
     </script>
+    <style>
+      @keyframes kenburns-zoom {
+        0% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(1.05);
+        }
+      }
+      .animate-kenburns {
+        animation: kenburns-zoom 30s ease-out forwards;
+      }
+
+      .animate-on-scroll {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        transition-delay: var(--animation-delay, 0s);
+      }
+
+      .animate-on-scroll.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
   <script type="importmap">
 {
   "imports": {
@@ -41,5 +65,33 @@
   <body class="bg-bpa-off-white text-bpa-black font-sans">
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });
+
+        const setupObserver = () => {
+            document.querySelectorAll('.animate-on-scroll').forEach(el => {
+                observer.observe(el);
+            });
+        };
+        
+        // Initial setup
+        setupObserver();
+
+        // Re-run setup if DOM changes, useful for client-side routing or dynamic content
+        const mutationObserver = new MutationObserver(setupObserver);
+        const rootElement = document.getElementById('root');
+        if (rootElement) {
+            mutationObserver.observe(rootElement, { childList: true, subtree: true });
+        }
+      });
+    </script>
   </body>
 </html>

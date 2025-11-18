@@ -4,11 +4,14 @@ import CTAButton from './CTAButton';
 const Hero: React.FC = () => {
   return (
     <section 
-      className="relative text-center py-24 md:py-40 px-4 sm:px-6 lg:px-8 overflow-hidden bg-cover bg-center text-white"
-      style={{ backgroundImage: `url('https://images.pexels.com/photos/163347/rowing-competition-sport-team-163347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')` }}
+      className="relative text-center py-24 md:py-40 px-4 sm:px-6 lg:px-8 overflow-hidden text-white"
       aria-labelledby="masterclass-title"
     >
-       <div className="absolute inset-0 bg-bpa-red text-bpa-off-white"></div>
+      <div 
+        className="absolute inset-0 bg-cover bg-center animate-kenburns"
+        style={{ backgroundImage: `url('https://images.pexels.com/photos/163347/rowing-competition-sport-team-163347.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')` }}
+      ></div>
+      <div className="absolute inset-0 bg-bpa-red opacity-80"></div>
       <div className="relative z-10 container mx-auto">
         <h2 className="font-serif text-bpa-off-white text-lg md:text-xl mb-4">MasterClass Sustainable AI - Entrepreneurs & Dirigeants PMETI</h2>
         <h1 id="masterclass-title" className="font-serif font-bold text-bpa-off-white text-4xl md:text-6xl lg:text-7xl leading-tight mb-6">

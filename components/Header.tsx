@@ -1,9 +1,23 @@
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Header: React.FC = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <header className="py-6 px-4 sm:px-6 lg:px-8 bg-bpa-off-white/80 backdrop-blur-sm sticky top-0 z-50 border-b border-bpa-gold/20">
+    <header className={`sticky top-0 z-50 px-4 sm:px-6 lg:px-8 transition-all duration-300 ${
+      isScrolled 
+        ? 'py-4 bg-bpa-off-white shadow-md' 
+        : 'py-6 bg-bpa-off-white/80 backdrop-blur-sm border-b border-bpa-gold/20'
+    }`}>
       <div className="container mx-auto flex justify-center items-center gap-8">
         <a href="https://www.pascal-advisors.com/" target="_blank" rel="noopener noreferrer">
           <img 

@@ -57,15 +57,19 @@ const Program: React.FC = () => {
   return (
     <section className="py-16 md:py-24 bg-bpa-off-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="font-serif text-3xl md:text-4xl text-bpa-red">Une journée pour vous transformer</h2>
+        <div className="text-center mb-12 animate-on-scroll">
+          <h2 className="font-serif text-3xl md:text-4xl text-bpa-red">Une journée pour discerner l'usage de l'IA dans votre entreprise</h2>
           <p className="mt-4 text-lg text-bpa-black/70 max-w-3xl mx-auto">
             Parcours éclair combinant une conférence inspirante à 360° et une session collaborative pour initier un discernement stratégique concret.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {programData.map((item, index) => (
-            <div key={index} className="bg-white p-8 text-center rounded-sm shadow-sm border-t-2 border-bpa-gold">
+            <div 
+              key={index} 
+              className="bg-white p-8 text-center rounded-sm shadow-md border-t-2 border-bpa-gold transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105 animate-on-scroll"
+              style={{ '--animation-delay': `${index * 150}ms` } as React.CSSProperties}
+            >
               <div className="flex justify-center items-center mb-4">{item.icon}</div>
               <h3 className="font-serif text-xl font-semibold text-bpa-black mb-2">{item.title}</h3>
               <p className="font-sans text-bpa-black/70 leading-relaxed">{item.description}</p>

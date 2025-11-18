@@ -19,10 +19,10 @@ const PriceIcon = () => <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w
 
 const PracticalInfo: React.FC = () => {
   return (
-    <section className="py-16 md:py-24 bg-bpa-red text-bpa-off-white">
+    <section className="py-16 md:py-24 bg-gradient-to-br from-bpa-red to-red-900 text-bpa-off-white overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div>
+          <div className="animate-on-scroll">
             <h2 className="font-serif text-3xl md:text-4xl mb-8">Informations Pratiques</h2>
             <div className="space-y-6">
                 <InfoItem icon={<CalendarIcon />} title="Date">Jeudi 29 Janvier 2026</InfoItem>
@@ -31,7 +31,10 @@ const PracticalInfo: React.FC = () => {
                 <InfoItem icon={<PriceIcon />} title="Tarif">1 300 € HT par participant<br /><span className="text-sm font-light opacity-80">(Inclut échanges préalables, animation et supports)</span></InfoItem>
             </div>
           </div>
-          <div className="bg-bpa-off-white text-bpa-black p-8 md:p-12 text-center rounded-sm shadow-2xl">
+          <div 
+            className="bg-bpa-off-white text-bpa-black p-8 md:p-12 text-center rounded-sm shadow-2xl animate-on-scroll"
+            style={{ '--animation-delay': '200ms' } as React.CSSProperties}
+          >
               <h3 className="font-serif text-2xl md:text-3xl text-bpa-red mb-4">Les places sont limitées.</h3>
               <p className="font-sans text-lg mb-8">Pour garantir une expérience d'apprentissage et de networking de qualité, nous limitons volontairement le nombre de participants à 12.</p>
               <CTAButton href="https://form.typeform.com/to/RlsxshV4">Je réserve ma place</CTAButton>
