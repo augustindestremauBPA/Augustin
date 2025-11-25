@@ -1,7 +1,8 @@
-import React from 'react';
+
+import React, { ReactNode } from 'react';
 import CTAButton from './CTAButton';
 
-const InfoItem: React.FC<{ icon: React.ReactNode; title: string; children: React.ReactNode }> = ({ icon, title, children }) => (
+const InfoItem: React.FC<{ icon: ReactNode; title: string; children: ReactNode }> = ({ icon, title, children }) => (
     <div className="flex items-start">
         <div className="flex-shrink-0 mr-4 mt-1">{icon}</div>
         <div>

@@ -1,7 +1,8 @@
-import React from 'react';
+
+import React, { ReactNode } from 'react';
 
 interface CTAButtonProps {
-  children: React.ReactNode;
+  children: ReactNode;
   href: string;
   className?: string;
 }
