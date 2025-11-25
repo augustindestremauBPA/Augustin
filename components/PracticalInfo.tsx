@@ -38,7 +38,7 @@ const PracticalInfo: React.FC = () => {
           >
               <h3 className="font-serif text-2xl md:text-3xl text-bpa-red mb-4">Les places sont limitées.</h3>
               <p className="font-sans text-lg mb-8">Pour garantir une expérience d'apprentissage et de networking de qualité, nous limitons volontairement le nombre de participants à 12.</p>
-              <CTAButton href="https://form.typeform.com/to/RlsxshV4">Je réserve ma place</CTAButton>
+              <CTAButton href="https://form.typeform.com/to/Anx2Clfm">Je réserve ma place</CTAButton>
           </div>
         </div>
       </div>

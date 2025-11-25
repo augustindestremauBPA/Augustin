@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
           <span className="mx-4 text-bpa-gold">&#8226;</span>
           <span>Paris</span>
         </div>
-        <CTAButton href="https://form.typeform.com/to/RlsxshV4">Réservez votre place</CTAButton>
+        <CTAButton href="https://form.typeform.com/to/Anx2Clfm">Réservez votre place</CTAButton>
       </div>
     </section>
   );
