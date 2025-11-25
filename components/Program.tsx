@@ -76,6 +76,14 @@ const Program: React.FC = () => {
             </div>
           ))}
         </div>
+        
+        <div className="mt-12 md:mt-16 animate-on-scroll flex justify-center">
+            <img 
+                src="https://drive.google.com/uc?export=view&id=16-H-CtFYxeWnC9PvcmESzHsIwiosEQuF" 
+                alt="Illustration Masterclass" 
+                className="rounded-sm shadow-xl max-w-full h-auto max-h-[500px] border-4 border-white"
+            />
+        </div>
       </div>
     </section>
   );
