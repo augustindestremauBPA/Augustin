@@ -1,3 +1,4 @@
+
 import React from 'react';
 import type { Testimonial } from '../types';
 
@@ -9,8 +10,8 @@ const testimonialsData: Testimonial[] = [
   },
   {
     quote: "J'ai rarement participé à une formation avec un tel niveau de profondeur et d'applicabilité. Les outils sont concrets et l'énergie du groupe, très porteuse.",
-    author: "Florence Guemy",
-    company: "Ex-Bayard",
+    author: "Florence Guémy",
+    company: "Ex-Bayard, VP de Heart Leadership University",
   },
   {
     quote: "Enfin une approche qui ne sacrifie pas l'humain sur l'autel de la performance. C'est la clé du management durable que je cherchais. Indispensable.",

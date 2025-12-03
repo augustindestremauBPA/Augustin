@@ -58,7 +58,7 @@ const Program: React.FC = () => {
     <section className="py-16 md:py-24 bg-bpa-off-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 animate-on-scroll">
-          <h2 className="font-serif text-3xl md:text-4xl text-bpa-red">Une journée pour discerner l'usage de l'IA dans votre entreprise</h2>
+          <h2 className="font-serif text-3xl md:text-4xl text-bpa-red">Une journée pour affiner la stratégie IA dans votre entreprise</h2>
           <p className="mt-4 text-lg text-bpa-black/70 max-w-3xl mx-auto">
             Parcours éclair combinant une conférence inspirante à 360° et une session collaborative pour initier un discernement stratégique concret.
           </p>
@@ -75,6 +75,13 @@ const Program: React.FC = () => {
               <p className="font-sans text-bpa-black/70 leading-relaxed">{item.description}</p>
             </div>
           ))}
+        </div>
+        <div className="mt-12 md:mt-16 animate-on-scroll flex justify-center">
+            <img 
+            src="https://i.postimg.cc/wj0DXwnV/BPA.png" 
+            alt="Schéma stratégique d'implémentation IA" 
+            className="w-full max-w-5xl h-auto rounded-sm shadow-md"
+            />
         </div>
       </div>
     </section>

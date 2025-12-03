@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const About: React.FC = () => {
@@ -32,7 +33,7 @@ const About: React.FC = () => {
               />
             </a>
             <p className="font-sans text-bpa-black/80 leading-relaxed flex-grow">
-              <strong>Heart Leadership University</strong> est une institution dédiée au leadership par l'intelligence du coeur. Elle forme les leaders à cultiver l'empathie, l'authenticité et le courage pour créer des cultures d'entreprise où la performance et le bien-être humain prospèrent de concert.
+              <strong>Heart Leadership University</strong> est une association d’intérêt général à caractère éducatif & scientifique qui vise à faire évoluer les imaginaires et les pratiques de leadership et à préserver ce qui fait de nous des humains.
             </p>
           </div>
         </div>

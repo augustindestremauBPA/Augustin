@@ -1,3 +1,4 @@
+
 import React from 'react';
 import CTAButton from './CTAButton';
 
@@ -15,7 +16,7 @@ const Hero: React.FC = () => {
       <div className="relative z-10 container mx-auto">
         <h2 className="font-serif text-bpa-off-white text-lg md:text-xl mb-4">MasterClass Sustainable AI - Entrepreneurs & Dirigeants PMETI</h2>
         <h1 id="masterclass-title" className="font-serif font-bold text-bpa-off-white text-4xl md:text-6xl lg:text-7xl leading-tight mb-6">
-          Discerner la juste transformation IA
+          Discerner le juste usage des IA dans la transformation
         </h1>
         <p className="font-sans text-bpa-off-white/90 text-lg md:text-2xl max-w-3xl mx-auto mb-8">
           Remettre l'IA à sa place, sans trahison de la mission ni déni d'efficacité
